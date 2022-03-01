@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <form method="POST" action="/post">
+        {% csrf_token %}
+        <input type="text" name="movie" id="movie">
+        <input type="submit">
+        <!--<button onclick="validate()">submit</button>-->
+    </form>
+    <!--<button id="botton" onclick="validate()">button</button>-->
+    <script>
+       /* function validate(){
+            var movie=document.getElementById("movie");
+            $.ajax({
+                type:"POST",
+                url:"/post",
+                data:{movie_name:movie},
+                success:function(data)
+                {
+                    alert("success")
+                }
+               
+            })
+        }*/
+    </script>
+</body>
+</html>
